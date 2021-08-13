@@ -10,12 +10,12 @@ body {
     color: rgb(75, 75, 75);
 }
 .container {
-    width: 1200px;
+    width: 80%;
     margin: auto;
 }
 nav {
     border-bottom: 1px solid lightgray;
-    display: flex;
+    display: block;
     justify-content: space-between;
     padding: 1em;
 }
@@ -28,7 +28,7 @@ nav > ul {
     display: flex;
 }
 nav > ul li {
-    margin: 1em;
+    margin: 1em 1em 1em 0;
 }
 .path {
     list-style: none;
@@ -49,11 +49,12 @@ nav > ul li {
 } */
 .body-product {
     width: 100%;
-    display: flex;
+    display: block;
     padding: 0 1em;
 }
 .body-product > .grid-imgs {
-    width: 50%;
+    width: 100%;
+    height: 60vh;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: 65% auto;
@@ -96,8 +97,9 @@ nav > ul li {
     border: 1px solid black;
 }
 .body-product > .description-product {
-    width: 50%;
-    padding: 0 2em 1.5em 2em;
+    width: 100%;
+    padding: 0 ;
+    margin-bottom: 3em;
 }
 .body-product > .description-product h1 {
     color: rgb(75, 75, 75);
@@ -122,4 +124,29 @@ nav > ul li {
     background: black;
     color: white;
     margin-top: 25px;
+}
+
+@media (min-width: 1200px){
+    .body-product {
+        width: 100%;
+        display: flex;
+        padding: 0 1em;
+    }
+    .body-product > .grid-imgs {
+        width: 100%;
+        height: 65vh;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 65% auto;
+        
+    }
+    .body-product > .description-product {
+        width: 50%;
+    }
+    nav {
+        display: flex;
+    }
+    .body-product > .description-product {
+        padding: 2em 1.5em 2em;
+    }
 }
