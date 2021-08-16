@@ -133,7 +133,7 @@ nav > ul li {
         padding: 0 1em;
     }
     .body-product > .grid-imgs {
-        width: 100%;
+        width: 55%;
         height: 65vh;
         display: grid;
         grid-template-columns: auto auto auto;
@@ -141,7 +141,7 @@ nav > ul li {
         
     }
     .body-product > .description-product {
-        width: 50%;
+        width: 45%;
     }
     nav {
         display: flex;
